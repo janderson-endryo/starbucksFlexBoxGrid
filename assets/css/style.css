@@ -8,7 +8,21 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin:0px;
+    margin: 0px;
+}
+
+.button {
+    display: inline-block;
+    border: solid 2px #454545;
+    padding: 10px 30px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #454545;
+}
+
+.button:hover {
+    color: white;
+    background-color: #454545;
 }
 
 header .line {
@@ -48,7 +62,7 @@ header .line {
 }
 
 .header-search form {
-    display:flex;
+    display: flex;
 }
 
 .header-search button {
@@ -71,4 +85,247 @@ header .line {
 .header-menu img {
     width: 24px;
     height: 24px;
+}
+
+.banner {
+    background-image: url("../imagens/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.banner h1 {
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Oswald', 'sans-serif';
+    line-height: 100px;
+    margin: 0px;
+    margin-bottom: 33px;
+}
+
+.banner-imagens {
+    margin-top: 60px;
+}
+
+.banner-imagens img {
+    width: 148px;
+    height: 148px;
+    border: 5.7px solid #117050;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Oswald', 'sans-serif';
+    line-height: 46px;
+    margin: 23px 0px;
+
+}
+
+.area1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bar {
+    background-color: #006341;
+    height: 22px;
+    width: 168px;
+}
+
+.area1-container {
+    padding: 80px;
+}
+
+.area1-img1 {
+    height: 350px;
+    background-image: url("../imagens/f2.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.area1-img2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / span 2;
+    background-image: url("../imagens/f1.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.area1-quote {
+    margin-bottom: 30px;
+}
+
+.area1-text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area2-container {
+    padding: 80px;
+}
+
+.area2-img1 {
+    height: 450px;
+    background-image: url("../imagens/f4.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.area2-img2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    background-image: url("../imagens/f3.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.area2-text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area3-container {
+    padding: 200px 80px;
+    background-image: url("../imagens/bg2.jpg");
+    background-position: left;
+    background-size: cover;
+}
+
+.area3-text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area3-img1 {
+    background-image: url("../imagens/f5.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.area4 {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    background-color: #e8e9ee;
+}
+
+.area4-container {
+    padding: 160px 80px;
+}
+
+.area4-text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area4-img1 {
+    background-image: url("../imagens/bg3.jpg");
+    background-position: left;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1140px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-menu {
+        margin-left: 20px;
+    }
+
+    .header-search input {
+        max-width: 100px;
+    }
+
+    .banner h1 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .banner-imagens img {
+        width: 70px;
+        height: 70px;
+        border: 3.7px solid #117050;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .area1-img1 {
+        height: 210px;
+    }
+
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+        grid-template-columns: 1fr;
+    }
+
+    .area1-container,
+    .area2-container,
+    .area3-container,
+    .area4-container {
+        padding: 40px;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 16px;
+    }
 }
