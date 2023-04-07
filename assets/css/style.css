@@ -91,6 +91,7 @@ header .line {
     background-image: url("../imagens/bg.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 90px;
     padding-bottom: 90px;
 }
@@ -102,6 +103,7 @@ header .line {
     line-height: 100px;
     margin: 0px;
     margin-bottom: 33px;
+    padding: 0px 20px;
 }
 
 .banner-imagens {
@@ -125,6 +127,11 @@ h2 {
 
 }
 
+h3 {
+    padding: 0px 20px;
+    max-width: 370px;
+}
+
 .area1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -145,6 +152,7 @@ h2 {
     background-image: url("../imagens/f2.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -154,6 +162,7 @@ h2 {
     background-image: url("../imagens/f1.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -180,6 +189,7 @@ h2 {
     background-image: url("../imagens/f4.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -189,6 +199,7 @@ h2 {
     background-image: url("../imagens/f3.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -207,6 +218,7 @@ h2 {
     background-image: url("../imagens/bg2.jpg");
     background-position: left;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .area3-text {
@@ -218,6 +230,7 @@ h2 {
     background-image: url("../imagens/f5.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -239,6 +252,8 @@ h2 {
 .area4-img1 {
     background-image: url("../imagens/bg3.jpg");
     background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 footer {
@@ -253,12 +268,20 @@ footer {
         padding-left: 20px;
         padding-right: 40px;
     }
+
+    .area1-img1 {
+        height: 252px;
+    }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
     .container {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .area1-img1 {
+        height: 220px;
     }
 
     .area1 {
@@ -271,6 +294,10 @@ footer {
 
     .area3 {
         grid-template-columns: 3fr 2fr;
+    }
+
+    .area4-img1 {
+        background-size: contain;
     }
 }
 
@@ -307,7 +334,7 @@ footer {
     }
 
     .area1-img1 {
-        height: 210px;
+        height: 200px;
     }
 
     .area1,
